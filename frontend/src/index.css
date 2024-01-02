@@ -1,0 +1,194 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap-reboot.min.css");
+
+@font-face {
+  font-family: Blackcraft;
+  src: url("fonts/Blackcraft.otf");
+}
+
+@font-face {
+  font-family: Redpower;
+  src: url("fonts/REDPOWER.ttf");
+}
+
+@font-face {
+  font-family: Amazdoom;
+  src: url("fonts/AmazDooMLeft.ttf");
+}
+
+@font-face {
+  font-family: Lozung;
+  src: url("fonts/Lozung.ttf");
+}
+
+@font-face {
+  font-family: Stampatello;
+  src: url("fonts/StampatelloFaceto.otf");
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  font-family: Stampatello;
+}
+
+a {
+  color: inherit;
+  margin: 0 0 20px 0;
+}
+
+h1 {
+  font-family: Lozung;
+  text-align: left;
+  font-size: 55px;
+  color: #e93007;
+  margin: 0 0 50px 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 50px;
+}
+
+.introducion p {
+  text-align: center;
+  font-size: 20px;
+  width: 50%;
+}
+
+.introducion p b {
+  font-family: Lozung;
+  font-size: 30px;
+  white-space: nowrap;
+  letter-spacing: 2px;
+}
+
+.introducion img {
+  height: 200px;
+}
+
+.upload {
+  margin: 100px 0 0 0;
+}
+
+.upload .left {
+  width: 470px;
+}
+
+.upload .left > span {
+  display: block;
+  margin: 0 0 15px 0 !important;
+  text-align: center;
+}
+
+.drop-container {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  padding: 0px 20px;
+  border-radius: 10px;
+  border: 2px dashed #ffffff;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.drop-container:hover,
+.drop-container.drag-active {
+  background: #eee;
+  border-color: #111;
+  color: #111;
+}
+
+.drop-container:hover .drop-title,
+.drop-container.drag-active .drop-title {
+  color: #272727;
+}
+
+.drop-title {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+}
+
+input[type="file"] {
+  width: 350px;
+  max-width: 100%;
+  color: #444;
+  padding: 5px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #555;
+}
+
+input[type="file"]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #e93007;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: #ba0000;
+}
+
+.btn {
+  outline: none;
+  background: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+  padding: 8px 50px;
+  margin: 10px 30px 10px 0px;
+  transition: 0.3s all ease;
+}
+
+.btn.active {
+  background: #e93007;
+  color: #f1f1f1;
+}
+
+.btn.active:hover {
+  color: #e93007;
+  background: #f1f1f1;
+}
+
+.btn:hover {
+  background: #e93007;
+}
+
+button[type="submit"] {
+  margin-top: 30px;
+}
+
+footer {
+  margin: 150px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;
+}
